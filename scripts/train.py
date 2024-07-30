@@ -15,7 +15,8 @@ from torchvision.transforms import Compose, CenterCrop, Normalize, Resize, Pad
 from torchvision.transforms import ToTensor, ToPILImage
 
 from erfnet.dataset import VOC12,cityscapes
-from erfnet.transforms import Relabel, ToLabel, Colorize
+from erfnet.transforms import Relabel, ToLabel, Colorize, MyCoTransform
+from erfnet.losses import CrossEntropyLoss2d
 from erfnet.visualize import Dashboard
 
 import importlib
